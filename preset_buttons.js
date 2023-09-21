@@ -45,8 +45,6 @@ async function init() {
   console.log({ Message: `Macro [${_main_macro_name()}] initialization Complete!` })
 }
 
-xapi.on('ready', init)
-
 
 //Iterates over the Subscribe Object
 async function StartSubscriptions() {
@@ -251,3 +249,4 @@ async function buildUI() {
   console.log({ Message: `UserInterface Built!` })
 }
 
+init()
